@@ -10,10 +10,15 @@
         <relativePath/>
     </parent>
 
-    <groupId>com.cy</groupId>
+    <groupId>com.cy.algorithm</groupId>
     <artifactId>java-algorithm</artifactId>
     <version>1.0.0</version>
     <packaging>pom</packaging>
+
+    <modules>
+        <module>array</module>
+        <module>common</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
