@@ -16,8 +16,9 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>array</module>
+        <module>algorithm-type</module>
         <module>common</module>
+        <module>leetcode</module>
     </modules>
 
     <properties>

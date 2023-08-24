@@ -25,7 +25,11 @@ public class NumberUtil {
         return arr;
     }
 
-
+    /**
+     * 生成顺序的整形数组
+     * @param n
+     * @return
+     */
     public static Integer[] generateOrderedArray(int n) {
         assert n > 0;
 
