@@ -19,6 +19,7 @@
         <module>algorithm-type</module>
         <module>common</module>
         <module>leetcode</module>
+        <module>sort</module>
     </modules>
 
     <properties>

@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 @Slf4j
-class MoveZeroes_283Test {
+class MoveZeroes_283_Test {
 
     private static MoveZeroes_283 moveZeroes = new MoveZeroes_283();
 
