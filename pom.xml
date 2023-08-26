@@ -20,6 +20,7 @@
         <module>common</module>
         <module>leetcode</module>
         <module>sort</module>
+        <module>search</module>
     </modules>
 
     <properties>
