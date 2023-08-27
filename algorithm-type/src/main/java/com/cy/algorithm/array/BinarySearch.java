@@ -11,7 +11,7 @@ public class BinarySearch {
 
     public static void main(String[] args) {
         int n = (int)Math.pow(10, 7);
-        Integer[] integers = NumberUtil.generateOrderedArray(n);
+        Comparable[] integers = NumberUtil.generateOrderedArray(n);
 
         long startTime = System.currentTimeMillis();
 
@@ -25,7 +25,7 @@ public class BinarySearch {
         System.out.println("Time cost: " + (endTime - startTime) + " ms");
     }
 
-    public static int binarySearch(Integer[] nums, int n, int target) {
+    public static int binarySearch(Comparable[] nums, int n, int target) {
         /**
          * 在[l....r]的范围里寻找target
          */
@@ -37,11 +37,12 @@ public class BinarySearch {
          */
         while (l <= r) {
             int mid = l + (r - l) / 2;
-            if (nums[mid] == target) {
+            if (nums[mid].compareTo(target) == 0) {
                 return mid;
             }
 
-            if (target > nums[mid]) {
+//            if (target > nums[mid]) {
+            if (nums[mid].compareTo(target) > 0) {
                 l = mid + 1;
             }else {
                 r = mid - 1;

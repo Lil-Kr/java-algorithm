@@ -24,7 +24,7 @@ public class SelectionSort<E extends Comparable<E>> {
         System.out.println(res);
 
         /** ================================================ **/
-        selectionSort_toMin(arr, arr.length);
+        selectionSort_toMin(arr);
         res.replace(0, res.length(), "");
         res.append("[");
         for (int i = 0; i < arr.length; i++) {
@@ -36,17 +36,17 @@ public class SelectionSort<E extends Comparable<E>> {
     }
 
     /**
-     * 选择排序
+     * 选择排序, find min value
      * @param arr
-     * @param n
      */
-    public static void selectionSort_toMin(Comparable[] arr, int n) {
+    public static void selectionSort_toMin(Comparable[] arr) {
+        int length = arr.length;
         /**
          * 寻找 [i...n) 区间里的最小值
          */
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < length; i++) {
             int minIndex = i;
-            for (int j = i+1; j < n; j++) {
+            for (int j = i+1; j < length; j++) {
                 if (arr[j].compareTo(arr[minIndex]) < 0)
                     minIndex = j;
             }
@@ -55,17 +55,17 @@ public class SelectionSort<E extends Comparable<E>> {
     }
 
     /**
-     * 选择排序
+     * 选择排序 find max value
      * @param arr
-     * @param n
+     * @param range
      */
-    public static void selectionSort_toMax(Comparable[] arr, int n) {
+    public static void selectionSort_toMax(Comparable[] arr, int range) {
         /**
          * 寻找 [i...n) 区间里的最大值
          */
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < range; i++) {
             int minIndex = i;
-            for (int j = i+1; j < n; j++) {
+            for (int j = i+1; j < range; j++) {
                 if (arr[j].compareTo(arr[minIndex]) > 0)
                     minIndex = j;
             }
