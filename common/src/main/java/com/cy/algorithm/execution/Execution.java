@@ -22,7 +22,7 @@ public class Execution {
         targetMethod.invoke(null, params);
         long endTime = System.currentTimeMillis();
 
-        System.out.println(clz.getSimpleName()+ " : " + (endTime-startTime) + " ms" );
+        System.out.println(clz.getSimpleName()+ " : " + targetMethod.getName() + " : " + (endTime-startTime) + " ms" );
     }
 
     /**

@@ -1,4 +1,4 @@
-package com.cy.algorithm.sort.advanced;
+package com.cy.algorithm.sort.advanced.merge;
 
 import com.cy.algorithm.common.StringPrint;
 
@@ -15,7 +15,8 @@ public class MergeSort {
 
     public static void main(String[] args) {
 //        Comparable[] arr = {3, 4, 5, 6, 7, 8, 9, 0, -1, -2};
-        Comparable[] arr = {2,3,6,8,1,4,5,7};
+//        Comparable[] arr = {3,2,6,8,1,4,5,7};
+        Comparable[] arr = {3,2};
 //        Comparable[] temp = Arrays.copyOfRange(arr, 0, arr.length - 0 + 1);
 //
 //        System.out.println(arr.length);
@@ -78,11 +79,10 @@ public class MergeSort {
             } else if (aux[i - l].compareTo(aux[j - l]) < 0) {
                 arr[k] = aux[i - l];
                 i++;
-            }else {
+            } else {
                 arr[k] = aux[j - l];
                 j++;
             }
         }
     }
-
 }
