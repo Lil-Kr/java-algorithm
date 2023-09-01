@@ -24,15 +24,20 @@ public class MergeSort {
 
         sort(arr,0, arr.length-1);
         System.out.println(StringPrint.printArray(arr));
+    }
 
-//        merge(arr, 0, 0, 0);
+    public static void sort(Comparable[] arr) {
+        if (null == arr) {
+            return;
+        }
+        sort(arr,0, arr.length - 1);
     }
 
     /**
      * 递归使用归并排序, 对 arr[l...r] 的范围进行排序
      * @param arr
      */
-    public static void sort(Comparable[] arr, int l, int r) {
+    private static void sort(Comparable[] arr, int l, int r) {
         if (l >= r) {
             return;
         }
