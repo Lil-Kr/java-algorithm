@@ -9,18 +9,20 @@ import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-class QuickSortTwoPointTest {
+class QuickSort2WayTest {
 
     private static Comparable[] arr = {3, 2, 6, 8, 1, 4, 5, 7};
 
     private static String strMatch = "[1,2,3,4,5,6,7,8]";
 
     @BeforeEach
-    public void init() {}
+    public void init() {
+
+    }
 
     @Test
     public void test1() {
-        QuickSortTwoPoint.quicksort(arr);
+        QuickSort2Way.quicksort(arr);
         String res1 = StringPrint.printArray(arr);
         System.out.println(res1);
         Assertions.assertEquals(strMatch, res1);
@@ -38,6 +40,6 @@ class QuickSortTwoPointTest {
         Execution.executor(QuickSortBase.class, "quicksort", arr1);
 //        Execution.executor(InsertionSort.class, "sort", arr2);
         Execution.executor(QuickSortRandom.class, "quicksort", arr3);
-        Execution.executor(QuickSortTwoPoint.class, "quicksort", arr4);
+        Execution.executor(QuickSort2Way.class, "quicksort", arr4);
     }
 }

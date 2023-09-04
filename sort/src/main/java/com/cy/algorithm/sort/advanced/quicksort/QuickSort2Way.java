@@ -7,7 +7,7 @@ import com.cy.algorithm.common.util.CommonUtil;
  * @Date: 2023/9/1
  * @Description: 双路快排, 解决重复元素比较多的情况
  */
-public class QuickSortTwoPoint {
+public class QuickSort2Way {
 
     public static void quicksort(Comparable[] arr) {
         if(null == arr)
