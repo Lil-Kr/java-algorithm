@@ -1,6 +1,5 @@
-package com.cy.algorithm.execution;
+package com.cy.algorithm.common.execution;
 
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 /**
@@ -10,9 +9,7 @@ import java.lang.reflect.Method;
  */
 public class Execution {
 
-    private Execution(){}
-
-    public static void executor(Class clz, String method, Comparable[] arr) throws InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException {
+    public static void executor(Class clz, String method, Comparable[] arr) throws Exception {
 
         Method targetMethod = clz.getMethod(method, new Class[]{Comparable[].class});
         Object[] params = new Object[]{arr};
@@ -30,8 +27,8 @@ public class Execution {
      * @param arr
      * @return
      */
-    public static boolean isSorted(Comparable[] arr){
-        for( int i = 0 ; i < arr.length - 1 ; i ++ )
+    public static boolean isSorted(Comparable[] arr) {
+        for( int i = 0; i < arr.length - 1; i++)
             if( arr[i].compareTo(arr[i+1]) > 0 )
                 return false;
         return true;

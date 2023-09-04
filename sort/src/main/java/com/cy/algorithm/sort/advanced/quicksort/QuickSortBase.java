@@ -1,5 +1,7 @@
 package com.cy.algorithm.sort.advanced.quicksort;
 
+import com.cy.algorithm.common.util.CommonUtil;
+
 /**
  * @Author: Lil-K
  * @Date: 2023/9/1
@@ -14,10 +16,8 @@ package com.cy.algorithm.sort.advanced.quicksort;
  */
 public class QuickSortBase {
 
-    private QuickSortBase(){}
-
     /**
-     *
+     * 快速排序
      * @param arr
      */
     public static void quicksort(Comparable[] arr) {
@@ -49,6 +49,7 @@ public class QuickSortBase {
         quicksort(arr, p+1, r);
     }
 
+
     private static int partition(Comparable[] arr, int l, int r) {
         /**
          * 定于数组的第一个元素
@@ -62,20 +63,13 @@ public class QuickSortBase {
 
         for (int i = l + 1; i <= r; i ++) {
             if (arr[i].compareTo(v) < 0) {
-                if (i != j + 1)
-                    swap(arr, i, j + 1);
+                CommonUtil.swap(arr, i, j + 1);
                 j++;
             }
         }
 
-        swap(arr, l, j);
+        CommonUtil.swap(arr, l, j);
         return j;
     }
 
-
-    private static void swap(Comparable[] arr, int i, int j) {
-        Comparable temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
-    }
 }

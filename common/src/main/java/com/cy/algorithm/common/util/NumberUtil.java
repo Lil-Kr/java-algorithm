@@ -1,4 +1,4 @@
-package com.cy.algorithm.common;
+package com.cy.algorithm.common.util;
 
 /**
  * @Author: Lil-K
@@ -6,8 +6,6 @@ package com.cy.algorithm.common;
  * @Description: 生成数字工具类
  */
 public class NumberUtil {
-
-    private NumberUtil(){}
 
     /**
      * 生成指定范围内的整数数组
@@ -65,5 +63,4 @@ public class NumberUtil {
         }
         return arr;
     }
-
 }

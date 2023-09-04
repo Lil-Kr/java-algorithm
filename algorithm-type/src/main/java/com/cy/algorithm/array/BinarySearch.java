@@ -1,29 +1,11 @@
 package com.cy.algorithm.array;
 
-import com.cy.algorithm.common.NumberUtil;
-
 /**
  * @Author: Lil-K
  * @Date: 2023/8/23
  * @Description: 二分查找法
  */
 public class BinarySearch {
-
-    public static void main(String[] args) {
-        int n = (int)Math.pow(10, 7);
-        Comparable[] integers = NumberUtil.generateOrderedArray(n);
-
-        long startTime = System.currentTimeMillis();
-
-        for(int i = 0 ; i < integers.length ; i++)
-            if(i != binarySearch(integers, n, i))
-                throw new IllegalStateException("find i failed!");
-
-        long endTime = System.currentTimeMillis();
-
-        System.out.println("Binary Search test complete.");
-        System.out.println("Time cost: " + (endTime - startTime) + " ms");
-    }
 
     public static int binarySearch(Comparable[] nums, int n, int target) {
         /**

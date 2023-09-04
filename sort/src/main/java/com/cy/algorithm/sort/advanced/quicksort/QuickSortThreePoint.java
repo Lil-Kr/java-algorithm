@@ -8,4 +8,12 @@ package com.cy.algorithm.sort.advanced.quicksort;
  */
 public class QuickSortThreePoint {
 
+    public static void main(String[] args) {
+
+    }
+
+
+
+
+
 }

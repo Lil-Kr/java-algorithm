@@ -1,4 +1,4 @@
-package com.cy.algorithm.common;
+package com.cy.algorithm.common.util;
 
 import org.apache.commons.lang3.StringUtils;
 

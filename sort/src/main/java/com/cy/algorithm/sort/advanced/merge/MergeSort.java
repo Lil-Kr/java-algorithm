@@ -1,6 +1,5 @@
 package com.cy.algorithm.sort.advanced.merge;
 
-import com.cy.algorithm.common.StringPrint;
 
 import java.util.Arrays;
 
@@ -8,23 +7,8 @@ import java.util.Arrays;
  * @Author: Lil-K
  * @Date: 2023/8/28
  * @Description: 归并排序 nlogn
- *
- *
  */
 public class MergeSort {
-
-    public static void main(String[] args) {
-//        Comparable[] arr = {3, 4, 5, 6, 7, 8, 9, 0, -1, -2};
-//        Comparable[] arr = {3,2,6,8,1,4,5,7};
-        Comparable[] arr = {3,2};
-//        Comparable[] temp = Arrays.copyOfRange(arr, 0, arr.length - 0 + 1);
-//
-//        System.out.println(arr.length);
-//        System.out.println(temp.length);
-
-        sort(arr,0, arr.length-1);
-        System.out.println(StringPrint.printArray(arr));
-    }
 
     public static void sort(Comparable[] arr) {
         if (null == arr) {

@@ -1,7 +1,5 @@
 package com.cy.algorithm.sort.advanced.merge;
 
-import com.cy.algorithm.common.StringPrint;
-
 import java.util.Arrays;
 
 /**
@@ -10,14 +8,6 @@ import java.util.Arrays;
  * @Description: 自底向上归并排序
  */
 public class MergeSortBU {
-
-    public static void main(String[] args) {
-        Comparable[] arr = {3, 4, 5, 6, -1, -1, 7, 8, 9, 0, -1};
-//        Comparable[] arr = {3, 2, 6, 8,1,4,5,7,-1};
-//        Comparable[] arr = {3, 2, 6};
-        sort(arr);
-        System.out.println(StringPrint.printArray(arr));
-    }
 
 
     public static void sort(Comparable[] arr) {

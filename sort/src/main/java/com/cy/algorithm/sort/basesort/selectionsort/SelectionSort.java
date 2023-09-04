@@ -1,6 +1,6 @@
 package com.cy.algorithm.sort.basesort.selectionsort;
 
-import org.apache.commons.lang3.StringUtils;
+import com.cy.algorithm.common.util.CommonUtil;
 
 /**
  * @Author: Lil-K
@@ -10,30 +10,30 @@ import org.apache.commons.lang3.StringUtils;
  */
 public class SelectionSort<E extends Comparable<E>> {
 
-    public static void main(String[] args) {
-        Comparable[] arr = {3,2,6,1,9};
-        selectionSort_toMax(arr, arr.length);
-
-        StringBuilder res = new StringBuilder();
-        res.append("[");
-        for (int i = 0; i < arr.length; i++) {
-            res.append(arr[i] + ",");
-        }
-        res.replace(0, res.length(), StringUtils.removeEnd(res.toString(),","));
-        res.append("]");
-        System.out.println(res);
-
-        /** ================================================ **/
-        selectionSort_toMin(arr);
-        res.replace(0, res.length(), "");
-        res.append("[");
-        for (int i = 0; i < arr.length; i++) {
-            res.append(arr[i] + ",");
-        }
-        res.replace(0, res.length(), StringUtils.removeEnd(res.toString(),","));
-        res.append("]");
-        System.out.println(res);
-    }
+//    public static void main(String[] args) {
+//        Comparable[] arr = {3,2,6,1,9};
+//        selectionSort_toMax(arr, arr.length);
+//
+//        StringBuilder res = new StringBuilder();
+//        res.append("[");
+//        for (int i = 0; i < arr.length; i++) {
+//            res.append(arr[i] + ",");
+//        }
+//        res.replace(0, res.length(), StringUtils.removeEnd(res.toString(),","));
+//        res.append("]");
+//        System.out.println(res);
+//
+//        /** ================================================ **/
+//        selectionSort_toMin(arr);
+//        res.replace(0, res.length(), "");
+//        res.append("[");
+//        for (int i = 0; i < arr.length; i++) {
+//            res.append(arr[i] + ",");
+//        }
+//        res.replace(0, res.length(), StringUtils.removeEnd(res.toString(),","));
+//        res.append("]");
+//        System.out.println(res);
+//    }
 
     /**
      * 选择排序, find min value
@@ -50,7 +50,7 @@ public class SelectionSort<E extends Comparable<E>> {
                 if (arr[j].compareTo(arr[minIndex]) < 0)
                     minIndex = j;
             }
-            sawp(arr, i, minIndex);
+            CommonUtil.swap(arr, i, minIndex);
         }
     }
 
@@ -69,14 +69,7 @@ public class SelectionSort<E extends Comparable<E>> {
                 if (arr[j].compareTo(arr[minIndex]) > 0)
                     minIndex = j;
             }
-            sawp(arr, i, minIndex);
+            CommonUtil.swap(arr, i, minIndex);
         }
     }
-
-    private static void sawp(Comparable[] arr, int i, int j) {
-        Comparable temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
-    }
-
 }
