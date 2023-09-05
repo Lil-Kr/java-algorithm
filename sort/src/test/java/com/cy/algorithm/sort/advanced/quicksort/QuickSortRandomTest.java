@@ -24,7 +24,7 @@ public class QuickSortRandomTest {
         System.out.println(res1);
         Assertions.assertEquals(strMatch, res1);
 
-        Assertions.assertTrue(Execution.isSorted(arr));
+        Assertions.assertTrue(Execution.isSortedMinToMax(arr));
     }
 
     @Test
@@ -34,7 +34,7 @@ public class QuickSortRandomTest {
         String res1 = StringPrint.printArray(arr);
         System.out.println(res1);
 
-        Assertions.assertTrue(Execution.isSorted(arr));
+        Assertions.assertTrue(Execution.isSortedMinToMax(arr));
     }
 
     @Test
@@ -43,7 +43,7 @@ public class QuickSortRandomTest {
         QuickSortRandom.quicksort(arr);
         String res1 = StringPrint.printArray(arr);
         System.out.println(res1);
-        Assertions.assertTrue(Execution.isSorted(arr));
+        Assertions.assertTrue(Execution.isSortedMinToMax(arr));
     }
 
     @Test
@@ -52,7 +52,7 @@ public class QuickSortRandomTest {
         QuickSortRandom.quicksort(arr);
         String res1 = StringPrint.printArray(arr);
         System.out.println(res1);
-        Assertions.assertTrue(Execution.isSorted(arr));
+        Assertions.assertTrue(Execution.isSortedMinToMax(arr));
     }
 
     @Test

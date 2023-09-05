@@ -1,5 +1,7 @@
 package com.cy.algorithm.sort.basesort.insertionsort;
 
+import com.cy.algorithm.common.util.CommonUtil;
+
 /**
  * @Author: Lil-K
  * @Date: 2023/8/26
@@ -27,38 +29,35 @@ public class InsertionSort<E extends Comparable<E>> {
              * 所以
              */
             for (int j = i; j > 0 && arr[j].compareTo(arr[j-1]) < 0; j--) {
-                swap(arr, j, j-1);
+                CommonUtil.swap(arr, j, j-1);
             }
         }
+    }
+
+    public static void sortOptimization(Comparable[] arr) {
+        if(arr == null) {
+            return;
+        }
+        int n = arr.length - 1;
+        sortOptimization(arr, 0, n);
     }
 
     /**
      * 改良版
      * @param arr
      */
-    public static void sortOptimization(Comparable[] arr) {
-        if(arr == null) {
-            return;
-        }
-
-        for (int i = 0; i < arr.length; i++) {
+    public static void sortOptimization(Comparable[] arr, int l, int r) {
+        for (int i = l + 1; i <= r; i++) {
             Comparable temp = arr[i];
-            int j;
+            int j = i;
             /**
              * 与选择排序不同的是, 第二层循环是可以提前结束的
              * 所以
              */
-            for (j = i; j > 0 && arr[j-1].compareTo(temp) > 0; j--) {
+            for (; j > 0 && arr[j - 1].compareTo(temp) > 0; j--) {
                 arr[j] = arr[j - 1];
             }
             arr[j] = temp;
         }
     }
-
-    private static void swap(Comparable[] arr, int j, int i) {
-        Comparable temp = arr[j];
-        arr[j] = arr[i];
-        arr[i] = temp;
-    }
-
 }

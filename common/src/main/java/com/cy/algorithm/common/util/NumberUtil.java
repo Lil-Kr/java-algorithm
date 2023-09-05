@@ -54,7 +54,7 @@ public class NumberUtil {
         for( int i = 0 ; i < n ; i ++ )
             arr[i] = new Integer(i);
 
-        for( int i = 0 ; i < swapTimes ; i ++ ){
+        for( int i = 0 ; i < swapTimes ; i ++ ) {
             int a = (int)(Math.random() * n);
             int b = (int)(Math.random() * n);
             int t = arr[a];
