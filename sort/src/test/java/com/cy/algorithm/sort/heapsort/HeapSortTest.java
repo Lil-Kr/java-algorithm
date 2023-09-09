@@ -47,4 +47,13 @@ class HeapSortTest {
         Assertions.assertTrue(Execution.isSortedMaxToMin(arr));
     }
 
+
+    @Test
+    public void test_4() {
+        Comparable[] arr = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        Arrays.sort(arr);
+        System.out.println(StringPrint.printArray(arr));
+
+    }
+
 }

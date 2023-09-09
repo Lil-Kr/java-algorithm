@@ -21,6 +21,7 @@
         <module>leetcode</module>
         <module>sort</module>
         <module>search</module>
+        <module>algorithm-thinking</module>
     </modules>
 
     <properties>
