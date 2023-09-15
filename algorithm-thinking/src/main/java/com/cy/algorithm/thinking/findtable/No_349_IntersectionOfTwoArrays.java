@@ -1,4 +1,4 @@
-package com.cy.algorithm.thinking.find;
+package com.cy.algorithm.thinking.findtable;
 
 import org.apache.commons.lang3.ArrayUtils;
 
@@ -15,7 +15,7 @@ import java.util.Set;
  * 练习题:
  *  No.350 求 两个数组的交集 II
  */
-public class IntersectionOfTwoArrays_349 {
+public class No_349_IntersectionOfTwoArrays {
 
     public static void main(String[] args) {
         /**
@@ -38,17 +38,26 @@ public class IntersectionOfTwoArrays_349 {
         if (null == nums1 || null == nums2)
             return new int[]{};
 
+        /**
+         * 整体是O(nlogn)
+         */
         Set<Integer> numsSet1 = new HashSet<>();
         for (int i = 0; i < nums1.length; i++) {
             numsSet1.add(nums1[i]);
         }
 
+        /**
+         * 整体是O(nlogn)
+         */
         Set<Integer> numsSet2 = new HashSet<>();
         for (int i = 0; i < nums2.length; i++) {
-            if (numsSet1.contains(nums2[i]))
+            if (numsSet1.contains(nums2[i])) //
                 numsSet2.add(nums2[i]);
         }
 
+        /**
+         * 整体是O(n)
+         */
         int[] res = new int[numsSet2.size()];
         int index = 0;
         for (Integer num : numsSet2) {

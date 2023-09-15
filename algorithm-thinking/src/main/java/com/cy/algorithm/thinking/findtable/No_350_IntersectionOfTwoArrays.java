@@ -1,4 +1,4 @@
-package com.cy.algorithm.thinking.find;
+package com.cy.algorithm.thinking.findtable;
 
 import org.apache.commons.lang3.ArrayUtils;
 
@@ -13,7 +13,7 @@ import java.util.TreeMap;
  * @Description:
  * No.350 求两个数组的交集 II
  */
-public class IntersectionOfTwoArrays_350 {
+public class No_350_IntersectionOfTwoArrays {
 
     public static void main(String[] args) {
         int[] nums1 = {1,2,2,1}, nums2 = {2,2};

@@ -1,14 +1,15 @@
-package com.cy.algorithm.leetcode.number;
+package com.cy.algorithm.leetcode.number.no283;
 
+import com.cy.algorithm.leetcode.number.no283.No_283_MoveZeroes;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 @Slf4j
-class MoveZeroes_283_Test {
+class No_283_MoveZeroes_Test {
 
-    private static MoveZeroes_283 moveZeroes = new MoveZeroes_283();
+    private static No_283_MoveZeroes moveZeroes = new No_283_MoveZeroes();
 
     @Test
     public void test_moveZeroes_1_1() {

@@ -21,7 +21,7 @@ public class CollisionPointer {
     }
 
     /**
-     * No.167. Two Sum II - Input Array Is Sorted
+     * No.167 Two Sum II - Input Array Is Sorted
      */
     public static int[] twoSum(int[] numbers, int target) {
         if (null == numbers)
@@ -34,7 +34,7 @@ public class CollisionPointer {
                 return new int[]{i+1,j+1};
             } else if (numbers[i] + numbers[j] < target) {
                 i++;
-            }else {// numbers[i] + numbers[j] > target
+            } else {// numbers[i] + numbers[j] > target
                 j--;
             }
         }
