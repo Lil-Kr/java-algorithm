@@ -7,10 +7,6 @@ package com.cy.algorithm.thinking.array.quicksort3way;
  */
 public class QuickSort3Way {
 
-    public static void main(String[] args) {
-        System.out.println("ssss");
-    }
-
     /**
      *
      */

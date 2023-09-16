@@ -34,7 +34,7 @@
 * No.202 happy number
 * No.242
 * No.290 Word Pattern
-* No.205
+* No.205 
 * No.451
 
 ----------------
