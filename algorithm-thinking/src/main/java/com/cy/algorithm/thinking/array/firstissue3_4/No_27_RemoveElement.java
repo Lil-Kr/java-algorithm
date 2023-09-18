@@ -28,7 +28,7 @@ public class No_27_RemoveElement {
 
         int k = 0;
         for (int i = 0; i < nums.length; i++) {
-            if (nums[i] != val) {
+            if (nums[i] != val){
                 if (k != i){
                     CommonUtil.swap(nums, i, k);
                     k++;
