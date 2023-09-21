@@ -20,7 +20,7 @@ public class No_27_RemoveElement {
      * 确保: [k...i) 之间的数据都是指定的元素 val
      * @param nums
      * @param val
-     * @return k --> k的索引位置就是 [0 ...k] 不等于 val的元素个数
+     * @return k --> k的索引位置就是 [0 ...k] 不等于 val 的元素个数
      */
     public static int removeElement(int[] nums, int val) {
         if (null == nums)
@@ -28,11 +28,11 @@ public class No_27_RemoveElement {
 
         int k = 0;
         for (int i = 0; i < nums.length; i++) {
-            if (nums[i] != val){
-                if (k != i){
+            if (nums[i] != val) {
+                if (k != i) {
                     CommonUtil.swap(nums, i, k);
                     k++;
-                }else {
+                } else {
                     k++;
                 }
             }

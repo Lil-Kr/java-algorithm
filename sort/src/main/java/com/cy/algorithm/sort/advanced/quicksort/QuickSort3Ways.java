@@ -16,7 +16,7 @@ public class QuickSort3Ways {
         quicksort(arr, 0, n-1);
     }
 
-    private static void quicksort(Comparable[] arr, int l, int r) {
+    public static void quicksort(Comparable[] arr, int l, int r) {
 //        if (l >= r)
 //            return;
 
