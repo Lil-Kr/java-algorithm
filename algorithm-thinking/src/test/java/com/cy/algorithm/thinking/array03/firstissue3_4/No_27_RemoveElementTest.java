@@ -1,10 +1,8 @@
-package com.cy.algorithm.thinking.array.firstissue3_4;
+package com.cy.algorithm.thinking.array03.firstissue3_4;
 
 import com.cy.algorithm.common.util.StringPrint;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class No_27_RemoveElementTest {
 

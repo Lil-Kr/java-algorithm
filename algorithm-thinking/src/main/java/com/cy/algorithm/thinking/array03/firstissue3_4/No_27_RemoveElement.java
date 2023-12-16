@@ -1,4 +1,4 @@
-package com.cy.algorithm.thinking.array.firstissue3_4;
+package com.cy.algorithm.thinking.array03.firstissue3_4;
 
 import com.cy.algorithm.common.util.CommonUtil;
 

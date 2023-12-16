@@ -1,4 +1,4 @@
-package com.cy.algorithm.thinking.array.slidingwindow;
+package com.cy.algorithm.thinking.array03.slidingwindow;
 
 /**
  * @Author: Lil-K

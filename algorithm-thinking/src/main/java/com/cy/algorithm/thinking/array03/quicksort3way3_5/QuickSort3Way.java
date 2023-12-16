@@ -1,4 +1,4 @@
-package com.cy.algorithm.thinking.array.quicksort3way;
+package com.cy.algorithm.thinking.array03.quicksort3way3_5;
 
 /**
  * @Author: Lil-K

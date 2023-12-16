@@ -1,4 +1,4 @@
-package com.cy.algorithm.thinking.array.collisionpointer;
+package com.cy.algorithm.thinking.array03.collisionpointer3_6;
 
 /**
  * @Author: Lil-K

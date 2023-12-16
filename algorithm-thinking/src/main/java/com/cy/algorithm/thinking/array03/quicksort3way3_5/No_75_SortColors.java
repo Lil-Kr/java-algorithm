@@ -1,4 +1,4 @@
-package com.cy.algorithm.thinking.array.quicksort3way;
+package com.cy.algorithm.thinking.array03.quicksort3way3_5;
 
 import com.cy.algorithm.common.util.CommonUtil;
 import com.cy.algorithm.common.util.StringPrint;
